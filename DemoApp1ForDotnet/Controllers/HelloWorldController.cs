@@ -15,5 +15,12 @@ namespace DemoApp1ForDotnet.Controllers
         {
             return "This is the Welcome action method...";
         }
+
+        static List<string> names = new List<string>() { "Alice", "Bob", "Charlie" };
+
+        public string GetNames()
+        {
+            return string.Join(", ", names);
+        }
     }
 }
