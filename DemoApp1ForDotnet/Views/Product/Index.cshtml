@@ -1,0 +1,23 @@
+﻿
+@*--------------Index View Comments ---------------------------------------------------------*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@model List<DemoApp1ForDotnet.Models.Product>
+
+<h2>Product List</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {   
+        <li>
+            @item.Name - ₹@item.Price
+            <a href="/Product/Details/@item.Id">View</a>
+        </li>
+    }
+</ul>
+
+<a href="/Product/Create">Add New Product</a>
