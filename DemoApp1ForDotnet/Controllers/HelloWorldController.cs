@@ -10,11 +10,7 @@ namespace DemoApp1ForDotnet.Controllers
             return "This is my default action...";
         }
 
-        // GET: /HelloWorld/Welcome/ 
-        public string Welcome()
-        {
-            return "This is the Welcome action method...";
-        }
+        
 
         static List<string> names = new List<string>() { "Alice", "Bob", "Charlie" };
 
